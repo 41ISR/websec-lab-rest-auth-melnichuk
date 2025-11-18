@@ -1,0 +1,24 @@
+meta {
+  name: Create book
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{url}}/api/books
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "МОТИВАЦИЯ - ПУТЬ К УСПЕХУ",
+    "year": "2022",
+    "genre": "Психология",
+    "author": "Саранча Потурик"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

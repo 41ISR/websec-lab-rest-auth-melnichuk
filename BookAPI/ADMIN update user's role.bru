@@ -1,0 +1,25 @@
+meta {
+  name: ADMIN update user's role
+  type: http
+  seq: 14
+}
+
+put {
+  url: {{url}}/api/admin/users/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 3
+}
+
+body:json {
+  {
+    "role": "admin"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Add review
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{url}}/api/books/:id/reviews
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 1
+}
+
+body:json {
+  {
+    "rating": "4",
+    "comment": "rrrrrrr"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

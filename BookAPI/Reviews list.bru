@@ -1,0 +1,19 @@
+meta {
+  name: Reviews list
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{url}}/api/books/:id/reviews
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 1
+}
+
+settings {
+  encodeUrl: true
+}

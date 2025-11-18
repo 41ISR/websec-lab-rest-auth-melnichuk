@@ -1,0 +1,15 @@
+meta {
+  name: ADMIN user list
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{url}}/api/admin/users
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

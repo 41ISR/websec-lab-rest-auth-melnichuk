@@ -1,0 +1,23 @@
+{
+  "version": "1",
+  "name": "BookAPI",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ],
+  "size": 0,
+  "filesCount": 0,
+  "proxy": {
+    "enabled": true,
+    "protocol": "http",
+    "hostname": "10.0.55.52",
+    "port": 3128,
+    "auth": {
+      "enabled": false,
+      "username": "",
+      "password": ""
+    },
+    "bypassProxy": ""
+  }
+}
