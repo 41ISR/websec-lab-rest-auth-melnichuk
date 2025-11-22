@@ -1,0 +1,25 @@
+meta {
+  name: Update book
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{url}}/api/books/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 23
+}
+
+body:json {
+  {
+    "description": "История хоккея"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

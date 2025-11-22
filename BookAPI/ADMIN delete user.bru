@@ -1,0 +1,19 @@
+meta {
+  name: ADMIN delete user
+  type: http
+  seq: 13
+}
+
+delete {
+  url: {{url}}/api/admin/users/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 4
+}
+
+settings {
+  encodeUrl: true
+}

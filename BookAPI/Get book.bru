@@ -1,0 +1,19 @@
+meta {
+  name: Get book
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{url}}/api/books/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 1
+}
+
+settings {
+  encodeUrl: true
+}

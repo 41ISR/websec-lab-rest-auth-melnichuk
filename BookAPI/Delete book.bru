@@ -1,0 +1,25 @@
+meta {
+  name: Delete book
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{url}}/api/books/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 5
+}
+
+body:json {
+  {
+    "description": "История хоккея"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

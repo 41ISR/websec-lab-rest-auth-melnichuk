@@ -1,0 +1,26 @@
+meta {
+  name: Delete review
+  type: http
+  seq: 11
+}
+
+delete {
+  url: {{url}}/api/reviews/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 2
+}
+
+body:json {
+  {
+    "rating": "2",
+    "comment": "шу"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
